@@ -51,23 +51,69 @@
     </header>
 
     <main class="main-content">
-        <h1 class="page-title">Planering & Tidsplanering</h1>
+        <h1 class="page-title">Tidsplanering i praktiken</h1>
 
         <section class="content-section">
-            <h2 class="page-subtitle">Innehåll kommer här</h2>
-            <p>Innehåll från din PDF kommer att fyllas i här.</p>
+            <h2 class="page-subtitle">Planering</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+                <div>
+                    <h3 style="color: var(--primary-yellow); margin-bottom: 1rem;">från Koncept till Produkt</h3>
+                    <p><strong>Vad?</strong></p>
+                    <p><strong>Hur?</strong></p>
+                </div>
+                <div>
+                    <h3 style="color: var(--primary-yellow); margin-bottom: 1rem;">från Produkt till Mobilisering</h3>
+                    <p><strong>När?</strong></p>
+                    <p><strong>Vem?</strong></p>
+                </div>
+            </div>
         </section>
 
         <section class="content-section">
-            <h2 class="page-subtitle">Undersidor</h2>
-            <ul style="margin-left: 2rem;">
-                <li style="margin: 0.5rem 0;"><a href="wbs.html" class="highlight">WBS</a></li>
-                <li style="margin: 0.5rem 0;"><a href="aktiviteter.html" class="highlight">Aktiviteter</a></li>
-                <li style="margin: 0.5rem 0;"><a href="natverk.html" class="highlight">Nätverk</a></li>
-                <li style="margin: 0.5rem 0;"><a href="risk.html" class="highlight">Risk</a></li>
-                <li style="margin: 0.5rem 0;"><a href="basplan.html" class="highlight">Basplan</a></li>
-                <li style="margin: 0.5rem 0;"><a href="layouter.html" class="highlight">Layouter</a></li>
+            <h2 class="page-subtitle">Varför Tidsplanera?</h2>
+            <ul style="margin-left: 2rem; line-height: 2;">
+                <li>Klara projektsluttid</li>
+                <li>Visualisera arbetsflöde</li>
+                <li>Identifiera kritiska aktiviteter</li>
+                <li>Koordinera involverade parter</li>
+                <li>Gör risk bedömning och fördelning</li>
+                <li>Prognostisera resursanvändning</li>
+                <li>Följa upp framdrift och identifiera avvikelser</li>
+                <li>Publicera enhetlig projektinformation</li>
             </ul>
+        </section>
+
+        <section class="content-section" style="background-color: #2a2a2a;">
+            <h2 class="page-subtitle">Definitioner</h2>
+            <div style="line-height: 1.8;">
+                <p style="margin: 0.5rem 0;"><strong class="highlight">WBS:</strong> Arbetspaketsnedbrytning. Används för att definiera aktiviteter och leverablar.</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">Aktivitet:</strong> Arbetsmoment med ett definierat start- och slutdatum.</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">Milstolpe:</strong> Viktiga händelser eller kontrollpunkter.</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">Baseline/Basplan:</strong> Ögonblicksbild av tidplan vid en viss tidpunkt. En överenskommen referenspunkt att följa upp tidplan och rapportera avvikelser mot.</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">Kritiska linje:</strong> Längsta kontinuerliga aktivitetsflöde som visar kortaste möjliga slutdatumet för projekt, baseras på beräkningar enligt CPM (Critical path method)</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">Glapp (float):</strong> Mängden tid en aktivitet försenas utan att påverka efterföljaren</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">Data date:</strong> Datum tidplan stäms av</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">ATR och ATR Plan:</strong> Arbetspaket tidplan aktiviteter baseras på</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">ÄTA (tidplan):</strong> Ändringar i tidplanens omfattning</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">Huvudtidplan:</strong> Master tidplan – En samlingstidplan för projektets helhet</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">Input/Output:</strong> Aktiviteter/milstolpar mellan olika delar av tidplan eller mellan olika tidplaner</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">Primavera P6:</strong> Ett moln baserat planerings verktyg. För stora, komplexa projekt.</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">MS Project:</strong> Microsofts planerings verktyg. För enklare projekt.</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">Gantt Chart:</strong> Schema som illustrerar aktiviteter och milstolpar i en tidplan</p>
+                <p style="margin: 0.5rem 0;"><strong class="highlight">Aktivitetskoder:</strong> Identitet på aktiviteter som används bland annat i filtering och layouter</p>
+            </div>
+        </section>
+
+        <section class="content-section text-center">
+            <h2 class="page-subtitle">Klicka för att se olika steg av tidsplanering:</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 2rem;">
+                <a href="wbs.html" class="btn btn-secondary">WBS</a>
+                <a href="aktiviteter.html" class="btn btn-secondary">Aktiviteter</a>
+                <a href="natverk.html" class="btn btn-secondary">Nätverk</a>
+                <a href="risk.html" class="btn btn-secondary">Risk</a>
+                <a href="basplan.html" class="btn btn-secondary">Basplan</a>
+                <a href="layouter.html" class="btn btn-secondary">Layouter</a>
+            </div>
         </section>
     </main>
 

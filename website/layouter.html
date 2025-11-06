@@ -47,8 +47,136 @@
 
     <main class="main-content">
         <h1 class="page-title">Layouter</h1>
+
         <section class="content-section">
-            <p>Innehåll från din PDF kommer att fyllas i här.</p>
+            <h2>Läsbarhetsåtgärder i Tidplaner</h2>
+            <ul>
+                <li>Kodning av aktiviteter</li>
+                <li>Filtrering</li>
+                <li>Layouter</li>
+            </ul>
+
+            <h3>Valfri</h3>
+            <ul>
+                <li>Aktivitets ID eller WBS ID</li>
+                <li>Färger på Gantt eller aktivitets tabell (möjligheten varierar mellan olika verktyg)</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Kodning</h2>
+            <div class="two-column-list">
+                <div class="column">
+                    <ul>
+                        <li>Leveranser</li>
+                        <li>Kontraktuella tider</li>
+                        <li>Projekt övergripande tider</li>
+                        <li>Restriktiva aktiviteter</li>
+                        <li>Aktiviteter med hög risk</li>
+                        <li>Teknikslag/område</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <ul>
+                        <li>Aktivitetsansvarig</li>
+                        <li>Externa parter</li>
+                        <li>Etapp och Fas</li>
+                        <li>Granskningsaktiviteter</li>
+                        <li>Aktiviteter i gränssnitt av olika projekt</li>
+                        <li>Material, resurs</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h3>Kodning för övergripande/master tidplaner:</h3>
+            <ul>
+                <li>Kontrakt</li>
+                <li>Inköp/Upphandlingar</li>
+                <li>Typ av uppdrag</li>
+                <li>Entreprenadform</li>
+                <li>Kontraktform</li>
+                <li>Fas (högre nivå) - t ex Bygg, projektering…</li>
+                <li>Geografiskt område</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Filter</h2>
+            <p><strong>Förslag på filter i tidplaner:</strong></p>
+            <ul>
+                <li>Aktiviteter med avvikelse</li>
+                <li>Aktiviteter med framdrift över/under en vis procent</li>
+                <li>Aktiviteter inom en period</li>
+                <li>Leverans aktiviteter (inom en period)</li>
+                <li>Etapp/fas/teknikområde aktiviteter</li>
+                <li>Rapporteringsaktiviteter</li>
+            </ul>
+            <div class="highlight-box">
+                <p>Alla planeringsverktyg har filter och layout egenskaper</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Layouter</h2>
+            <p><strong>Förslag på layouter för tidplaner:</strong></p>
+            <ul>
+                <li>Viktiga milstolpar</li>
+                <li>Avvikelser med float och avvikelse kolumn i aktivitetstabellen</li>
+                <li>Projektövergripande-rolled up (nivå1-2)</li>
+                <li>Avstämnings layouter med basplantider och kommentar kolumn</li>
+            </ul>
+            <div class="highlight-box">
+                <p>Utskrifter från tidplaner borde ha information om projektnamn, avstämningsdatum, utskriftsdatum och fastställd basplan datum</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Dokumentering</h2>
+            <p><strong>Tidplan Dokumentation:</strong></p>
+            <ul>
+                <li>Valda processer, metoder och logiken i tidplanen</li>
+                <li>Valda detaljnivån för olika delar av tidplan</li>
+                <li>Färdiga layouter och andra automatiserade funktioner i planeringsverktyg</li>
+                <li>Största risker och antaganden</li>
+                <li>Kalender, historik om basplaner</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Framgångsfaktorer för tidplaner</h2>
+            <ul>
+                <li>Kompetenta medarbetare och projektledare</li>
+                <li>Tillräcklig lång planeringsperiod</li>
+                <li>Noggrann analys av underlag och krav</li>
+                <li>God förståelse av projekt innehåll och mål</li>
+                <li>Kommunikation</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Kopplingar mellan tidplaner</h2>
+
+            <h3>1. Kopplingar till en mastertidplan (sammanfattning tidplan) från underliggande tidplaner</h3>
+            <p>Direkta kopplingar mellan mastertidplan och underliggande eftersom mastertidplan har ett syfta att summera ihop informationen på en övergripande nivå.</p>
+
+            <h3>2. Kopplingar mellan underliggande tidplaner</h3>
+            <p>Primärt skuggmilstolpar (en frikopplad kopia av en äkta milstolpe) så att tidplaner inte påverkas per automatik när man uppdaterar syskon tidplaner. Skuggmilstolpe ger möjlighet att analysera situationen.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Databas Funktion</h2>
+            <ul>
+                <li>Ett antal olika tidplaner som hör till ett stort projekt i samma yta</li>
+                <li>Kopplingar mellan tidplaner - levande</li>
+                <li>Automatiserad uppdatering</li>
+                <li>Flera användare kan jobba samtidigt i samma tidplan</li>
+                <li>Aktivitetskoder, layouter, kalendrar, resurser och andra globala medel kan användas i samtliga tidplaner</li>
+                <li>Minskad administration</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <p><a href="tidsplanering.html" class="back-link">Tillbaka till Planering</a></p>
         </section>
     </main>
 
