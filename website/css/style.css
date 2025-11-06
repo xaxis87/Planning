@@ -1,0 +1,318 @@
+/* Planering med Burak Ünal - Webbplats Styling */
+
+/* Färgvariabler baserade på Wix-designen */
+:root {
+    --primary-yellow: #F4E909;
+    --background-black: #000000;
+    --text-white: #FFFFFF;
+    --accent-blue: #3A5AFE;
+    --accent-red: #ED1C24;
+    --accent-green: #00EC3D;
+    --hover-yellow: #FFD700;
+}
+
+/* Grundläggande reset och typografi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: var(--background-black);
+    color: var(--text-white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header och Navigation */
+.site-header {
+    background-color: var(--background-black);
+    border-bottom: 3px solid var(--primary-yellow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 0;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-yellow);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.site-title:hover {
+    color: var(--hover-yellow);
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link {
+    color: var(--text-white);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.nav-link:hover {
+    background-color: var(--primary-yellow);
+    color: var(--background-black);
+}
+
+/* Dropdown-meny */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1a1a;
+    min-width: 220px;
+    box-shadow: 0 8px 16px rgba(244, 233, 9, 0.2);
+    border: 2px solid var(--primary-yellow);
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    z-index: 1001;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content .nav-link {
+    padding: 0.8rem 1.2rem;
+    border-radius: 0;
+}
+
+.dropdown-content .nav-link:hover {
+    background-color: var(--primary-yellow);
+    color: var(--background-black);
+}
+
+/* Mobilmeny */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: 2px solid var(--primary-yellow);
+    color: var(--primary-yellow);
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu-toggle:hover {
+    background-color: var(--primary-yellow);
+    color: var(--background-black);
+}
+
+/* Huvudinnehåll */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    min-height: calc(100vh - 200px);
+}
+
+.page-title {
+    font-size: 2.5rem;
+    color: var(--primary-yellow);
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--primary-yellow);
+    padding-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: 1.8rem;
+    color: var(--text-white);
+    margin: 2rem 0 1rem;
+}
+
+.content-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-yellow);
+}
+
+/* Knappar */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-yellow);
+    color: var(--background-black);
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-color: var(--hover-yellow);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(244, 233, 9, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--primary-yellow);
+    color: var(--primary-yellow);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-yellow);
+    color: var(--background-black);
+}
+
+/* Bilder */
+.content-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem 0;
+    border: 2px solid var(--primary-yellow);
+}
+
+/* Footer */
+.site-footer {
+    background-color: #0a0a0a;
+    border-top: 3px solid var(--primary-yellow);
+    padding: 2rem 0;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.footer-content p {
+    color: var(--text-white);
+    margin: 0.5rem 0;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #1a1a1a;
+        border-bottom: 3px solid var(--primary-yellow);
+        padding: 1rem;
+        gap: 0;
+    }
+
+    .main-nav.active {
+        display: flex;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-link {
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropdown-content {
+        position: static;
+        display: none;
+        border: none;
+        border-left: 3px solid var(--primary-yellow);
+        margin: 0;
+        padding-left: 1rem;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .main-content {
+        padding: 2rem 1rem;
+    }
+
+    .content-section {
+        padding: 1.5rem;
+    }
+}
+
+/* Animationer */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Utility-klasser */
+.text-center {
+    text-align: center;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.highlight {
+    color: var(--primary-yellow);
+    font-weight: bold;
+}
