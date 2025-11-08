@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     navLinks.forEach(link => {
         if (link.getAttribute('href') === currentPage) {
-            link.style.backgroundColor = 'var(--primary-yellow)';
+            link.style.backgroundColor = 'var(--soft-yellow)';
             link.style.color = 'var(--background-black)';
         }
     });
