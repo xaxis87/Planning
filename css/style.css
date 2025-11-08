@@ -428,6 +428,59 @@ body {
 }
 
 /* ============================================
+   ICON SECTION
+   ============================================ */
+
+.icon-section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+.icon-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.icon-underline {
+    border-bottom: 4px solid var(--primary-yellow);
+    width: 60px;
+    margin: 0 auto 0.5rem;
+}
+
+.icon-item h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .icon-grid {
+        gap: 2rem;
+    }
+
+    .icon-item img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icon-item h3 {
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
    BACK TO TOP BUTTON
    ============================================ */
 
