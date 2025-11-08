@@ -7,12 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (mobileMenuToggle) {
         mobileMenuToggle.addEventListener('click', function() {
-            mainNav.classList.toggle('active');
+            const isActive = mainNav.classList.toggle('active');
+
+            // Uppdatera aria-expanded
+            this.setAttribute('aria-expanded', isActive);
 
             // Ändra ikonen
             const icon = this.querySelector('span');
             if (icon) {
-                icon.textContent = mainNav.classList.contains('active') ? '✕' : '☰';
+                icon.textContent = isActive ? '✕' : '☰';
             }
         });
     }
@@ -89,6 +92,48 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }, 250);
     });
+
+    // Keyboard navigation support - ESC to close menus
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' || e.key === 'Esc') {
+            // Stäng mobilmeny
+            if (mainNav && mainNav.classList.contains('active')) {
+                mainNav.classList.remove('active');
+                if (mobileMenuToggle) {
+                    mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                    const icon = mobileMenuToggle.querySelector('span');
+                    if (icon) icon.textContent = '☰';
+                }
+            }
+
+            // Stäng dropdowns
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+            });
+        }
+    });
+
+    // Back to top button functionality
+    const backToTopButton = document.querySelector('.back-to-top');
+
+    if (backToTopButton) {
+        // Visa/dölj knappen baserat på scroll position
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+
+        // Scrolla till toppen när knappen klickas
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
 
 // Funktion för att visa/dölja innehåll
