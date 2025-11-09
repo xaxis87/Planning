@@ -591,28 +591,31 @@ body {
     text-align: left;
 }
 
-.back-link a {
+.back-link a,
+.btn-back {
     display: inline-block;
-    padding: 1.2rem 3rem;
+    padding: 0.8rem 2rem;
     background-color: transparent;
     color: var(--text-black);
     text-decoration: none;
-    border: 3px solid var(--text-black);
+    border: 2px solid var(--text-black);
     border-radius: 50px;
     font-weight: 400;
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 1.1rem;
-    letter-spacing: 3px;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
     text-align: center;
 }
 
-.back-link a:hover {
+.back-link a:hover,
+.btn-back:hover {
     transform: translateX(5px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.back-link a:focus {
+.back-link a:focus,
+.btn-back:focus {
     outline: 3px solid var(--text-black);
     outline-offset: 4px;
 }
