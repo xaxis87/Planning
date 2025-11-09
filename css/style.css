@@ -592,13 +592,29 @@ body {
 }
 
 .back-link a {
+    display: inline-block;
+    padding: 1.2rem 3rem;
+    background-color: transparent;
     color: var(--text-black);
-    text-decoration: underline;
-    font-weight: 500;
+    text-decoration: none;
+    border: 3px solid var(--text-black);
+    border-radius: 50px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    text-align: center;
 }
 
 .back-link a:hover {
-    color: var(--accent-teal);
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.back-link a:focus {
+    outline: 3px solid var(--text-black);
+    outline-offset: 4px;
 }
 
 /* Desktop: Dölj mobilbild, visa desktopbild */
