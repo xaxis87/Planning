@@ -617,6 +617,7 @@ body {
 
 .wbs-section-4 .wbs-image-before-natplan {
     order: 2;
+    align-self: center;
 }
 
 .wbs-section-4 .wbs-text {
