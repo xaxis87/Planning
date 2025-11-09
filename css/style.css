@@ -637,7 +637,8 @@ body {
     }
 
     .wbs-image.smaller {
-        max-width: 100%;
+        max-width: 65%;
+        margin: 0 auto 1.5rem;
     }
 
     .wbs-title {
@@ -659,6 +660,22 @@ body {
 
     .wbs-image-desktop {
         display: none;
+    }
+
+    /* För section 2 och 3: Bild ovanför text i mobil */
+    .wbs-section-2 .wbs-content-wrapper,
+    .wbs-section-3 .wbs-content-wrapper {
+        flex-direction: column;
+    }
+
+    .wbs-section-2 .wbs-image,
+    .wbs-section-3 .wbs-image {
+        order: 1;
+    }
+
+    .wbs-section-2 .wbs-text,
+    .wbs-section-3 .wbs-text {
+        order: 2;
     }
 
     /* För section 4: Bild 4 ovanför NÄTPLAN text i mobil */
