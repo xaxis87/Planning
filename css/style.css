@@ -520,6 +520,100 @@ body {
 }
 
 /* ============================================
+   WBS PAGE STYLES
+   ============================================ */
+
+.wbs-title {
+    display: inline-block;
+    border: 3px solid var(--primary-yellow);
+    background-color: transparent;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    margin-bottom: 3rem;
+}
+
+.wbs-section {
+    margin-bottom: 3rem;
+}
+
+.wbs-content-wrapper {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.wbs-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.wbs-text ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.wbs-text li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.wbs-text p {
+    margin: 1rem 0;
+    line-height: 1.6;
+}
+
+.wbs-text h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.wbs-image {
+    flex: 0 0 300px;
+    max-width: 300px;
+}
+
+.wbs-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.back-link {
+    margin-top: 3rem;
+    text-align: left;
+}
+
+.back-link a {
+    color: var(--text-black);
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.back-link a:hover {
+    color: var(--accent-teal);
+}
+
+@media (max-width: 768px) {
+    .wbs-content-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .wbs-image {
+        flex: 0 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .wbs-title {
+        padding: 0.8rem 2rem;
+        font-size: 2.5rem;
+    }
+}
+
+/* ============================================
    PRINT STYLES
    ============================================ */
 
@@ -558,5 +652,9 @@ body {
 
     .page-title {
         page-break-after: avoid;
+    }
+
+    .wbs-content-wrapper {
+        page-break-inside: avoid;
     }
 }
