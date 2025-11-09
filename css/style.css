@@ -527,9 +527,10 @@ body {
     display: inline-block;
     border: 3px solid var(--primary-yellow);
     background-color: transparent;
-    padding: 1rem 3rem;
+    padding: 0.8rem 2.5rem;
     border-radius: 50px;
     margin-bottom: 3rem;
+    font-size: 2.5rem;
 }
 
 .wbs-section {
@@ -574,6 +575,11 @@ body {
     max-width: 300px;
 }
 
+.wbs-image.smaller {
+    flex: 0 0 200px;
+    max-width: 200px;
+}
+
 .wbs-image img {
     width: 100%;
     height: auto;
@@ -595,6 +601,28 @@ body {
     color: var(--accent-teal);
 }
 
+/* Desktop: Dölj mobilbild, visa desktopbild */
+.wbs-image-mobile {
+    display: none;
+}
+
+.wbs-image-desktop {
+    display: block;
+}
+
+/* För section 4: Normal ordning på desktop (bild till höger) */
+.wbs-section-4 .wbs-content-wrapper {
+    flex-direction: row;
+}
+
+.wbs-section-4 .wbs-image-before-natplan {
+    order: 2;
+}
+
+.wbs-section-4 .wbs-text {
+    order: 1;
+}
+
 @media (max-width: 768px) {
     .wbs-content-wrapper {
         flex-direction: column;
@@ -607,9 +635,43 @@ body {
         width: 100%;
     }
 
+    .wbs-image.smaller {
+        max-width: 100%;
+    }
+
     .wbs-title {
         padding: 0.8rem 2rem;
-        font-size: 2.5rem;
+        font-size: 2rem;
+    }
+
+    /* Mobil: Visa mobilbild, dölj desktopbild */
+    .wbs-image-mobile {
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .wbs-image-mobile img {
+        width: 100%;
+        height: auto;
+    }
+
+    .wbs-image-desktop {
+        display: none;
+    }
+
+    /* För section 4: Bild 4 ovanför NÄTPLAN text i mobil */
+    .wbs-section-4 .wbs-content-wrapper {
+        flex-direction: column;
+    }
+
+    .wbs-section-4 .wbs-image-before-natplan {
+        order: 1;
+        margin-bottom: 1.5rem;
+    }
+
+    .wbs-section-4 .wbs-text {
+        order: 2;
     }
 }
 
