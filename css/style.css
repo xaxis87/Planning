@@ -544,6 +544,11 @@ body {
     justify-content: space-between;
 }
 
+/* För section 2: justera bild 3 vertikalt */
+.wbs-section-2 .wbs-content-wrapper {
+    align-items: center;
+}
+
 .wbs-text {
     flex: 1;
     min-width: 0;
