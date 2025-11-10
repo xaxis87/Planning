@@ -62,8 +62,90 @@
 
     <main id="main-content" class="main-content">
         <h1 class="page-title">Nätverk</h1>
+
         <section class="content-section">
-            <p>Innehåll från din PDF kommer att fyllas i här.</p>
+            <h2>Kopplingar</h2>
+            <ul>
+                <li>Logiskt nätverkskopplad tidplan är målet</li>
+                <li>Processer och metoder identifierade för projekt utgör grunder men arbetsmiljö, restriktioner och prioriteringar kan påverka kopplingar</li>
+                <li>Ansvariga för respektive område hjälper med kopplingar och alla andra beroenden</li>
+                <li>Tidigare erfarenheter hjälper men lösningen ska vara platsanpassad</li>
+                <li>Var medveten om drivande aktiviteter i kopplingar (driving relationships)</li>
+                <li>Vissa icke-drivande kopplingar(valfria kopplingar) görs för att minimera eventuella risker</li>
+                <li>Sekventiella aktiviteter är bättre men det kommer att finnas överlappande aktiviteter pga att bryta ännu mer ger inte mervärde i vissa fall.</li>
+            </ul>
+
+            <h3>Obligatoriska kopplingar</h3>
+            <p>Krävs av arbetets natur.</p>
+            <p>Typiskt exempel är att bygga kolumner innan platta.</p>
+
+            <h3>Rekommenderade kopplingar</h3>
+            <p>"Best practice" kräver dessa kopplingar men inte obligatorisk.</p>
+            <p><strong>Exempel:</strong> Kopplingar mellan projektering och byggande. Vänta tills hela projekteringen är slut eller inte?</p>
+
+            <h3>Externa kopplingar</h3>
+            <p>Externa förutsättningar som behövs för internt arbete.</p>
+            <p><strong>Exempel:</strong> Vänta på beslut från myndighet, eller smygstarta?</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Typ av kopplingar</h2>
+            <ul>
+                <li>Finish to start (rekommenderas)</li>
+                <li>Finish to finish</li>
+                <li>Start to start</li>
+                <li>Start to finish (inte rekommenderas)</li>
+            </ul>
+
+            <p><strong>Glapp(Lag):</strong> Efterföljaren startas en vis period efter föregångarens slut.</p>
+            <p><strong>Lead:</strong> Motsatsen till glapp.</p>
+
+            <p>Försök skapa aktiviteter istället för lag/lead(minimera antal lag/lead). Lag/lead är användbara i fall man inte behöver följa upp den tiden.</p>
+            <p>*FS koppling underlättar genomförandet av risk/osäkerhetsanalyser som Monte Carlo.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Typiska fel med kopplingar</h2>
+            <ul>
+                <li><strong>Fel logik:</strong> Okunskap eller missförståelse i arbetsflödet.</li>
+                <li><strong>Redundant logik:</strong> Arbetsflödet belastas av aktiviteter som inte behövs eller kan köras parallellt med andra aktiviteter.</li>
+                <li><strong>Loops:</strong> Fel kopplingar mellan efterföljare till någon av föregående aktiviteter. Händer ofta när man har stor antal aktiviteter i tidplan.</li>
+                <li><strong>Öppna änder:</strong> Aktiviteter utan efterföljare. Orsakar fel i float beräkningar. Ha alltid föregångare och efterföljare.</li>
+            </ul>
+            <p>Tänk på att kopplingar kan uppdateras vid senare tillfälle under projektets gång.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Låsningar</h2>
+            <p>Interna eller externa begränsningar till projekt:</p>
+            <ul>
+                <li>As soon as possible</li>
+                <li>As late as possible</li>
+                <li>Must finish/start on (hård)</li>
+                <li>Expected finish</li>
+                <li>Finish/start no earlier/later than (mjuk)</li>
+            </ul>
+            <p>Försök undvika låsningar i tidplan för en rätt float beräkning(se CPM). (framför allt hårda låsningar)</p>
+        </section>
+
+        <section class="content-section">
+            <h2>CPM (Critical Path Method)</h2>
+            <p>Efter att definierat aktiviteter, kopplingar och ledtider beräknar verktyg vi använder fram en tidplan. Denna tidplan skapas enligt CPM principer. Vad är CPM?</p>
+
+            <p>CPM är en metod som räknar fram viktiga aktiviteter/milstolpar och projektslutdatum i tidplanen. Verktyg använder "forward pass" och "backward pass" tekniken för att kunna räkna fram float och kritiska linjen.</p>
+
+            <p>"Tidigast startdatum"-tidigaste datum en aktivitet kan startas och "senast startdatum" -senaste startdatum en aktivitet kan startas innan projektets tider påverkas. Tidsskillnaden mellan tidigast start och senast startdatum beräknas som float. Aktiviteter som är i kritiska linjen har samma "tidigast och senast startdatum" vilket innebär de har "0" float. Så aktiviteter i kritiska linjen har ingen utrymme att röra sig.</p>
+
+            <p>Viktigt att kritiska linjen ska vara optimerad för resurstillgänglighet. Float kan utnyttjas i delar som inte i kritiska linjen om det inte finns resurser tillgänglig eller de är överbelastade.</p>
+
+            <div style="display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap;">
+                <div style="background-color: #f4d03f; padding: 20px; border-radius: 5px; flex: 1; min-width: 250px;">
+                    <strong>Total float:</strong> Tid en aktivitet kan skjutas upp utan att det försenar hela projektet
+                </div>
+                <div style="background-color: #5dade2; padding: 20px; border-radius: 5px; flex: 1; min-width: 250px;">
+                    <strong>Free float:</strong> Tid en aktivitet kan skjutas upp utan att det försenar en efterföljande aktivitet.
+                </div>
+            </div>
         </section>
     </main>
 
