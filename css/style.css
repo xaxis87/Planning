@@ -643,6 +643,17 @@ body {
     order: 1;
 }
 
+/* För section 5 på aktiviteter-sidan: Två bilder bredvid varandra */
+.wbs-section-5 .wbs-content-wrapper {
+    justify-content: center;
+    gap: 2rem;
+}
+
+.wbs-section-5 .wbs-image {
+    flex: 0 0 auto;
+    max-width: 280px;
+}
+
 @media (max-width: 768px) {
     .wbs-content-wrapper {
         flex-direction: column;
@@ -709,6 +720,17 @@ body {
 
     .wbs-section-4 .wbs-text {
         order: 2;
+    }
+
+    /* För section 5 på aktiviteter-sidan: Stack bilder vertikalt på mobil */
+    .wbs-section-5 .wbs-content-wrapper {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .wbs-section-5 .wbs-image {
+        max-width: 65%;
+        margin: 0 auto;
     }
 }
 
