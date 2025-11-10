@@ -180,20 +180,25 @@
             <div class="wbs-text">
                 <h2>Ledtider och tidsuppskattningar</h2>
 
-                <ul>
-                    <li>Egen erfarenhet</li>
-                    <li>Dokumenterade processer, standarder</li>
-                    <li>Kalkyl, studera ritningar/underlag</li>
-                    <li>Resurstillgänglighet (material, arbetskraft, verktyg)</li>
-                    <li>Input från ansvariga (de som utför arbetet)</li>
-                    <li>Från tidigare projekt, arkiv</li>
-                    <li>Genom att räkna mellan bindande tider</li>
-                    <li>Budget begränsningar, arbetsmiljö, restriktioner</li>
-                </ul>
+                <!-- Punkter och bild 7 bredvid varandra -->
+                <div class="wbs-content-wrapper">
+                    <div class="wbs-text">
+                        <ul>
+                            <li>Egen erfarenhet</li>
+                            <li>Dokumenterade processer, standarder</li>
+                            <li>Kalkyl, studera ritningar/underlag</li>
+                            <li>Resurstillgänglighet (material, arbetskraft, verktyg)</li>
+                            <li>Input från ansvariga (de som utför arbetet)</li>
+                            <li>Från tidigare projekt, arkiv</li>
+                            <li>Genom att räkna mellan bindande tider</li>
+                            <li>Budget begränsningar, arbetsmiljö, restriktioner</li>
+                        </ul>
+                    </div>
 
-                <!-- Bild 7 placerad efter punkterna -->
-                <div class="wbs-image smaller" style="margin: 1.5rem auto; max-width: 280px;">
-                    <img src="images/aktiviteter 7.avif" alt="Ledtider och tidsuppskattningar diagram" loading="lazy">
+                    <!-- Bild 7 placerad till höger av punkterna -->
+                    <div class="wbs-image smaller">
+                        <img src="images/aktiviteter 7.avif" alt="Ledtider och tidsuppskattningar diagram" loading="lazy">
+                    </div>
                 </div>
 
                 <p>För aktiviteter med stora osäkerheter gör <strong>min-trolig-max</strong> (optimistisk-trolig-pessimistisk) uppskattning</p>
@@ -223,18 +228,21 @@
                         <li>Att inte ta hänsyn till resursens kompetens</li>
                         <li>Att inte ta hänsyn till plats relaterade förutsättningar (arbetsmiljö, delad användning av verktyg, resurs)</li>
                     </ul>
-
-                    <h2 style="margin-top: 2rem;">Antaganden</h2>
-                    <ul>
-                        <li>Interna ledtider</li>
-                        <li>Externa ledtider <em>*T ex Material leveranstider, Handläggningstider hos myndigheter</em></li>
-                        <li>Besluts milstolpar</li>
-                        <li>Interna eller externa kopplingar</li>
-                    </ul>
-
-                    <p>Antaganden ska dokumenteras noggrant och följs upp vid tidplan avstämningar. (Gäller för tidsrisker också)</p>
-                    <p>Tidsrisker och antaganden minskar och kan ersättas av överenskommelser och mer verklighetsbaserade prognoser under projektets gång. (*För tidsrisker se Risk avsnittet)</p>
                 </div>
+            </div>
+
+            <!-- Antaganden flyttad utanför wrapper till vänster -->
+            <div class="wbs-text">
+                <h2 style="margin-top: 2rem;">Antaganden</h2>
+                <ul>
+                    <li>Interna ledtider</li>
+                    <li>Externa ledtider <em>*T ex Material leveranstider, Handläggningstider hos myndigheter</em></li>
+                    <li>Besluts milstolpar</li>
+                    <li>Interna eller externa kopplingar</li>
+                </ul>
+
+                <p>Antaganden ska dokumenteras noggrant och följs upp vid tidplan avstämningar. (Gäller för tidsrisker också)</p>
+                <p>Tidsrisker och antaganden minskar och kan ersättas av överenskommelser och mer verklighetsbaserade prognoser under projektets gång. (*För tidsrisker se Risk avsnittet)</p>
             </div>
         </section>
 
@@ -243,7 +251,7 @@
                 <h2>Kalender</h2>
 
                 <!-- Första listan och bild 10 bredvid varandra -->
-                <div class="wbs-content-wrapper" style="gap: 1.5rem;">
+                <div class="wbs-content-wrapper" style="gap: 0.5rem;">
                     <ul>
                         <li>röda dagar (lokala eller internationella)</li>
                         <li>semester</li>
