@@ -693,6 +693,41 @@ body {
     z-index: 2;
 }
 
+/* Överlappande bilder container för bild 8 och 9 */
+.overlapping-images-container-small {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    flex-shrink: 0;
+}
+
+.overlapping-images-container-small img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    max-width: 200px;
+}
+
+.overlapping-images-container-small .image-8 {
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.overlapping-images-container-small .image-9 {
+    left: 80px;
+    top: 120px;
+    z-index: 1;
+}
+
+/* Reversed wrapper för bilder till vänster, text till höger */
+.wbs-content-wrapper-reversed {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
 @media (max-width: 768px) {
     .wbs-content-wrapper {
         flex-direction: column;
@@ -786,6 +821,28 @@ body {
         position: static;
         transform: none;
         max-width: 65%;
+    }
+
+    /* Överlappande bilder 8 och 9 på mobil */
+    .overlapping-images-container-small {
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .overlapping-images-container-small img {
+        position: static;
+        max-width: 65%;
+    }
+
+    /* Reversed wrapper på mobil */
+    .wbs-content-wrapper-reversed {
+        flex-direction: column;
+        gap: 2rem;
     }
 }
 
