@@ -18,6 +18,39 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        .flex-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .flex-container .text-content {
+            flex: 1;
+        }
+        .flex-container .image-content {
+            flex: 0 0 300px;
+        }
+        .flex-container.large-image .image-content {
+            flex: 0 0 350px;
+        }
+        .flex-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+            .flex-container .image-content,
+            .flex-container.large-image .image-content {
+                flex: 1 1 auto;
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
         <!-- Skip to main content for accessibility -->
@@ -64,7 +97,14 @@
         <h1 class="page-title resurser-title">Resursutjämning</h1>
 
         <section class="content-section">
-            <p><strong>Resurskurvor</strong> möjliggör en rättare fördelning av resurser (kostnader, timmar, material) över aktiviteter i tidplaner. Dessa blir avgörande framförallt i tidplaner med långa aktiviteter.</p>
+            <div class="flex-container">
+                <div class="text-content">
+                    <p><strong>Resurskurvor</strong> möjliggör en rättare fördelning av resurser (kostnader, timmar, material) över aktiviteter i tidplaner. Dessa blir avgörande framförallt i tidplaner med långa aktiviteter.</p>
+                </div>
+                <div class="image-content">
+                    <img src="images/resursutjamning 1.avif" alt="Resurskurva diagram">
+                </div>
+            </div>
 
             <p class="extra-spacing">Övergripande tidplan med resurskurvor kan användas för ekonomiska prognoser</p>
             <p>(Genom att sätta total kalkyl kostnader på aktiviteter (med kostnadskurvor))</p>
@@ -74,20 +114,27 @@
                 <li>En sammanfattningsbild över projektfaser</li>
             </ul>
 
-            <h2>Varför Resursutjämnande?</h2>
-            <p>Tidplaner har resurser/material sitter på olika aktiviteter. Inte alla aktiviteter sekventiella i tidplan så att det blir krockar.</p>
-            <ul>
-                <li>Överbelastade resurser</li>
-                <li>Resursers användning fluktuerar mycket under genomförandet (bättre ha jämnare användning av resurser)</li>
-                <li>Begränsad resurs tillgänglighet</li>
-            </ul>
+            <div class="flex-container large-image">
+                <div class="text-content">
+                    <h2>Varför Resursutjämnande?</h2>
+                    <p>Tidplaner har resurser/material sitter på olika aktiviteter. Inte alla aktiviteter sekventiella i tidplan så att det blir krockar.</p>
+                    <ul>
+                        <li>Överbelastade resurser</li>
+                        <li>Resursers användning fluktuerar mycket under genomförandet (bättre ha jämnare användning av resurser)</li>
+                        <li>Begränsad resurs tillgänglighet</li>
+                    </ul>
 
-            <h2>Hur åtgärda?</h2>
-            <ul>
-                <li>Flytta icke kritiska aktiviteter (använd float)</li>
-                <li>Sätt fler resurser</li>
-                <li>Förläng aktivitetstid</li>
-            </ul>
+                    <h2>Hur åtgärda?</h2>
+                    <ul>
+                        <li>Flytta icke kritiska aktiviteter (använd float)</li>
+                        <li>Sätt fler resurser</li>
+                        <li>Förläng aktivitetstid</li>
+                    </ul>
+                </div>
+                <div class="image-content">
+                    <img src="images/resursutjamning 2.avif" alt="Gantt-diagram och resurshistogram">
+                </div>
+            </div>
 
             <div class="highlight-box">
                 <p>Viktigt att tidplanen analyseras efter resursutjämnande åtgärder. Kritiska linjen kan vara påverkad av dessa.</p>
