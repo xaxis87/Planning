@@ -566,6 +566,16 @@ body {
     font-size: 2rem;
 }
 
+.uppfoljning-title {
+    display: inline-block;
+    border: 3px solid var(--accent-orange);
+    background-color: transparent;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
 .wbs-section {
     margin-bottom: 3rem;
 }
