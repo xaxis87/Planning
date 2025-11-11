@@ -581,6 +581,17 @@ body {
     font-weight: 400;
 }
 
+.tidsplanering-title {
+    display: inline-block;
+    border: 3px solid var(--primary-yellow);
+    background-color: transparent;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
 .wbs-section {
     margin-bottom: 3rem;
 }
