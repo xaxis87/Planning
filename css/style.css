@@ -221,9 +221,10 @@ body {
 .highlight-box {
     border: 2px solid var(--accent-teal);
     border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
+    padding: 0.8rem 1.2rem;
+    margin: 1rem 0;
     background-color: rgba(58, 157, 156, 0.05);
+    display: inline-block;
 }
 
 /* Knappar */
