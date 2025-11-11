@@ -284,6 +284,10 @@ body {
     color: var(--accent-orange);
 }
 
+.btn-orange-border {
+    border-color: var(--accent-orange) !important;
+}
+
 /* Bilder */
 .content-image {
     max-width: 100%;
@@ -574,6 +578,7 @@ body {
     border-radius: 50px;
     margin-bottom: 3rem;
     font-size: 2rem;
+    font-weight: 400;
 }
 
 .wbs-section {
