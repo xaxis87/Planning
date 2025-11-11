@@ -218,6 +218,20 @@ body {
     background-color: transparent;
 }
 
+.content-section h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.content-section p + p {
+    margin-top: 0.5rem;
+}
+
+.content-section p.extra-spacing {
+    margin-top: 3rem;
+}
+
 .highlight-box {
     border: 2px solid var(--accent-teal);
     border-radius: 8px;
