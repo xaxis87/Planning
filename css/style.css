@@ -218,6 +218,29 @@ body {
     background-color: transparent;
 }
 
+.content-section h2 {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.content-section p + p {
+    margin-top: 0.5rem;
+}
+
+.content-section p.extra-spacing {
+    margin-top: 3rem;
+}
+
+.highlight-box {
+    border: 2px solid var(--accent-teal);
+    border-radius: 8px;
+    padding: 0.8rem 1.2rem;
+    margin: 1rem 0;
+    background-color: rgba(58, 157, 156, 0.05);
+    display: inline-block;
+}
+
 /* Knappar */
 .btn {
     display: inline-block;
@@ -259,6 +282,10 @@ body {
 .btn-orange {
     border-color: var(--accent-orange);
     color: var(--accent-orange);
+}
+
+.btn-orange-border {
+    border-color: var(--accent-orange) !important;
 }
 
 /* Bilder */
@@ -529,8 +556,40 @@ body {
     background-color: transparent;
     padding: 0.8rem 2.5rem;
     border-radius: 50px;
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
     font-size: 2rem;
+}
+
+.resurser-title {
+    display: inline-block;
+    border: 3px solid var(--accent-teal);
+    background-color: transparent;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.uppfoljning-title {
+    display: inline-block;
+    border: 3px solid var(--accent-orange);
+    background-color: transparent;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.tidsplanering-title {
+    display: inline-block;
+    border: 3px solid var(--primary-yellow);
+    background-color: transparent;
+    padding: 0.8rem 2.5rem;
+    border-radius: 50px;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 400;
 }
 
 .wbs-section {
@@ -611,6 +670,7 @@ body {
     font-size: 0.95rem;
     letter-spacing: 1px;
     text-align: center;
+    margin-top: 3rem;
 }
 
 .back-link a:hover,

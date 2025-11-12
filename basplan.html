@@ -61,10 +61,13 @@
     </header>
 
     <main id="main-content" class="main-content">
-        <h1 class="page-title">Basplan</h1>
+        <h1 class="page-title wbs-title">Basplan</h1>
 
-        <section class="content-section">
+        <section class="content-section" style="margin-top: 0.5rem;">
             <h2>Kontroll</h2>
+
+            <img src="images/basplan 1.avif" alt="Checklista för kontroll av tidplan" style="float: right; max-width: 200px; height: auto; margin: 0 0 20px 20px; border-radius: 5px;">
+
             <ul>
                 <li>Rimlig detaljnivå</li>
                 <li>Rätt kopplingar, logiska kopplingar</li>
@@ -79,38 +82,48 @@
         <section class="content-section">
             <h2>Krav</h2>
 
-            <h3>Beställare</h3>
+            <h3 style="font-size: 1.1em;">Beställare</h3>
             <ul>
                 <li>Kravställande innan planeringsfas och förklara förväntningar</li>
                 <li>Definiera tidsramar för uppdraget och informera om deltider</li>
             </ul>
 
-            <h3>Leverantör</h3>
+            <h3 style="font-size: 1.1em;">Leverantör</h3>
             <p>Kravuppfyllande, frågeställningar</p>
 
-            <h4>Krav på:</h4>
-            <ul>
-                <li>Uppbyggnad: WBS</li>
-                <li>Detaljnivå</li>
-                <li>Kopplingar</li>
-                <li>Leveranser och obligatoriska moment</li>
-                <li>Kalender</li>
-                <li>Planeringsperiod</li>
-            </ul>
+            <h4 style="margin-top: 30px; margin-bottom: 0;">Krav på:</h4>
 
-            <h4>Uppföljning</h4>
-            <ul>
-                <li>Frekvens</li>
-                <li>När?</li>
-                <li>Vad?</li>
-            </ul>
+            <div style="display: flex; gap: 30px; flex-wrap: wrap; margin-top: 20px;">
+                <div style="flex: 1; min-width: 200px;">
+                    <h5 style="margin-bottom: 10px;">Uppbyggnad</h5>
+                    <ul>
+                        <li>WBS</li>
+                        <li>Detaljnivå</li>
+                        <li>Kopplingar</li>
+                        <li>Leveranser och obligatoriska moment</li>
+                        <li>Kalender</li>
+                        <li>Planeringsperiod</li>
+                    </ul>
+                </div>
 
-            <h4>Rapportering</h4>
-            <ul>
-                <li>Milstolpe rapport</li>
-                <li>Avvikelse/orsak</li>
-                <li>Förslag på hantering</li>
-            </ul>
+                <div style="flex: 1; min-width: 200px;">
+                    <h5 style="margin-bottom: 10px;">Uppföljning</h5>
+                    <ul>
+                        <li>Frekvens</li>
+                        <li>När?</li>
+                        <li>Vad?</li>
+                    </ul>
+                </div>
+
+                <div style="flex: 1; min-width: 200px;">
+                    <h5 style="margin-bottom: 10px;">Rapportering</h5>
+                    <ul>
+                        <li>Milstolpe rapport</li>
+                        <li>Avvikelse/orsak</li>
+                        <li>Förslag på hantering</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section class="content-section">
@@ -146,11 +159,19 @@
 
         <section class="content-section">
             <h2>Basplan</h2>
-            <p>Sista steget i planeringsfasen är att ta fram en baseline/basplan (se definitioner för förklaring) för den tidplan alla involverade parter överens om innehåll, risker antaganden osv… Det finns alltid möjlighet att uppdatera denna ursprungsplan/baseline utifrån nya ÖK mellan parter. Delar som ligger långt fram i tiden hanteras som blocktider i baseline. När det görs planering av dessa grova aktiviteter speglas dessa i baseline också.</p>
 
-            <p>Baseline tas fram i planeringsverktyg och en kopia sparas och görs tillgänglig för projektmedlemmar. Det är viktigt att parterna är medvetna om att baseline är bindande och följs upp under arbetsgång.</p>
+            <div style="display: flex; gap: 30px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 30px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <p>Sista steget i planeringsfasen är att ta fram en baseline/basplan (se definitioner för förklaring) för den tidplan alla involverade parter överens om innehåll, risker antaganden osv… Det finns alltid möjlighet att uppdatera denna ursprungsplan/baseline utifrån nya ÖK mellan parter. Delar som ligger långt fram i tiden hanteras som blocktider i baseline. När det görs planering av dessa grova aktiviteter speglas dessa i baseline också.</p>
 
-            <p>Ifall man väljer ha resurser (timmar, kostnader…) i tidplanen täcker baseline dessa.</p>
+                    <p>Baseline tas fram i planeringsverktyg och en kopia sparas och görs tillgänglig för projektmedlemmar. Det är viktigt att parterna är medvetna om att baseline är bindande och följs upp under arbetsgång.</p>
+
+                    <p>Ifall man väljer ha resurser (timmar, kostnader…) i tidplanen täcker baseline dessa.</p>
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="images/basplan 2.png" alt="Gantt-chart illustration av basplan" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                </div>
+            </div>
 
             <p>Det är vanligtvis leverantör som tar baseline och tillhandahåller den för beställaren. Det kan tolkas som målplan projektet jobbar mot.</p>
 
@@ -159,21 +180,29 @@
 
         <section class="content-section">
             <h2>Ledningens roll i en hållbar tidplan</h2>
-            <ul>
-                <li>Design dokument är på plats i rätt tid, Material inköp och arbetsgrupper/underleverantörer görs i rätt tid</li>
-                <li>Arbetsmiljö är redo för arbetet och andra typ av tillstånd är på plats</li>
-                <li>Godkännandekrävande arbetsmoment godkänns i rätt tid</li>
-                <li>Trafikpåverkande åtgärder är rätt planerade och man har tillgång till plats</li>
-                <li>Arbetsgrupper jobbar enligt tidplanen och lämnar över till nästa grupp i rätt tid</li>
-                <li>Kommunikation och översyn av underleverantörens tidplanering</li>
-                <li>Ledningen ser till att synkning/koordinering av aktiviteter och grupper funkar i verkligheten. Lång framförhållning är nyckel.</li>
-                <li>Äga tidplanen och se till att tiderna hålls, ta extra initiativ när det behövs för att hålla tider.</li>
-            </ul>
+
+            <div style="display: flex; gap: 30px; align-items: flex-start; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 300px;">
+                    <ul>
+                        <li>Design dokument är på plats i rätt tid, Material inköp och arbetsgrupper/underleverantörer görs i rätt tid</li>
+                        <li>Arbetsmiljö är redo för arbetet och andra typ av tillstånd är på plats</li>
+                        <li>Godkännandekrävande arbetsmoment godkänns i rätt tid</li>
+                        <li>Trafikpåverkande åtgärder är rätt planerade och man har tillgång till plats</li>
+                        <li>Arbetsgrupper jobbar enligt tidplanen och lämnar över till nästa grupp i rätt tid</li>
+                        <li>Kommunikation och översyn av underleverantörens tidplanering</li>
+                        <li>Ledningen ser till att synkning/koordinering av aktiviteter och grupper funkar i verkligheten. Lång framförhållning är nyckel.</li>
+                        <li>Äga tidplanen och se till att tiderna hålls, ta extra initiativ när det behövs för att hålla tider.</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="images/basplan 3.avif" alt="Teamarbete och ledning för hållbar tidplan" style="width: 100%; max-width: 250px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                </div>
+            </div>
         </section>
 
-        <section class="content-section">
-            <p><a href="tidsplanering.html" class="back-link">Tillbaka till Planering</a></p>
-        </section>
+        <div class="back-link">
+            <a href="tidsplanering.html" class="btn-back">Tillbaka till Planering</a>
+        </div>
     </main>
 
     <footer class="site-footer">

@@ -61,20 +61,28 @@
     </header>
 
     <main id="main-content" class="main-content">
-        <h1 class="page-title">Risk</h1>
+        <h1 class="page-title wbs-title">Risk</h1>
 
-        <section class="content-section">
+        <section class="content-section" style="margin-top: 0.5rem;">
             <h2>Faktorer bakom Risker & Osäkerheter</h2>
-            <ul>
-                <li>Oklarheter i arbetspaket</li>
-                <li>Bristande kunskap i arbetet som ska genomföras</li>
-                <li>Arbete som utförs av externa parter eller kräver externa input/förutsättningar</li>
-                <li>Arbete långt i framtiden</li>
-                <li>Icke kända risker</li>
-                <li>Resurser, organisation</li>
-                <li>Väder, platsspecifika risker (mark, omgivning)</li>
-                <li>Grova antaganden i tidplan eller för optimistisk tidplan</li>
-            </ul>
+
+            <div style="display: flex; gap: 30px; align-items: flex-start; flex-wrap: wrap; margin-top: 20px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <ul>
+                        <li>Oklarheter i arbetspaket</li>
+                        <li>Bristande kunskap i arbetet som ska genomföras</li>
+                        <li>Arbete som utförs av externa parter eller kräver externa input/förutsättningar</li>
+                        <li>Arbete långt i framtiden</li>
+                        <li>Icke kända risker</li>
+                        <li>Resurser, organisation</li>
+                        <li>Väder, platsspecifika risker (mark, omgivning)</li>
+                        <li>Grova antaganden i tidplan eller för optimistisk tidplan</li>
+                    </ul>
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="images/risk 1.avif" alt="RISK-symbol med förstoringsglas" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                </div>
+            </div>
         </section>
 
         <section class="content-section">
@@ -114,6 +122,10 @@
             <p>Risktillägg kan också användas i tidplaner i form av bufferttid. Beroende av organisationen kan man ha en operativ tidplan som visar prognos tiderna utan risktillägg och en ledningstidplan med risktillägg.</p>
             <p>Organisationen siktar på och jobbar mot operativa tidplanen däremot ledningen kommunicerar ut risktillagda tidplanen externt.</p>
 
+            <div style="margin: 30px 0;">
+                <img src="images/risk 2.avif" alt="Gantt-diagram för risktidshantering i tidplaner" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: block; margin: 0 auto;">
+            </div>
+
             <div style="margin: 20px 0; padding: 20px; background-color: #fff3e0; border-left: 4px solid #ff9800;">
                 <h3>Viktiga punkter</h3>
                 <ul>
@@ -125,11 +137,9 @@
             </div>
         </section>
 
-        <section class="content-section">
-            <p style="margin-top: 30px;">
-                <a href="tidsplanering.html" class="button" style="display: inline-block; padding: 12px 24px; background-color: #2196F3; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">← Tillbaka till Planering</a>
-            </p>
-        </section>
+        <div class="back-link">
+            <a href="tidsplanering.html" class="btn-back">Tillbaka till Planering</a>
+        </div>
     </main>
 
     <footer class="site-footer">
