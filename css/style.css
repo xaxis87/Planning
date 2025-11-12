@@ -417,6 +417,82 @@ img {
         font-size: 1.5rem;
         padding: 0.6rem 1.5rem;
     }
+
+    /* Two-column list responsive */
+    .two-column-list {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Float images on mobile - remove float and center */
+    img[style*="float: right"],
+    figure[style*="float: right"] {
+        float: none !important;
+        margin: 1.5rem auto !important;
+        display: block !important;
+        max-width: 80% !important;
+        width: 80% !important;
+    }
+
+    /* Inline grid layouts - make single column on mobile */
+    div[style*="display: grid"][style*="grid-template-columns"] {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 1.5rem !important;
+    }
+
+    /* Inline flex containers - stack on mobile */
+    div[style*="display: flex"] {
+        flex-direction: column !important;
+    }
+
+    /* Clear floats on mobile */
+    div[style*="clear: both"] {
+        clear: both !important;
+    }
+
+    /* Improve text readability on mobile */
+    p, ul, ol {
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    /* Ensure figures don't overflow */
+    figure {
+        margin: 1.5rem 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    figure img {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Background sections on mobile */
+    section[style*="background-color"] {
+        padding: 1rem !important;
+        margin: 1rem 0 !important;
+    }
+
+    /* Colored boxes on mobile */
+    div[style*="padding: 20px"] {
+        padding: 1rem !important;
+        margin: 1rem 0 !important;
+    }
+
+    /* Button group - stack vertically on mobile */
+    .button-group {
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+
+    .button-group .btn,
+    .button-group .btn-back {
+        width: 100% !important;
+        margin: 0 !important;
+    }
 }
 
 /* Animationer */
@@ -450,6 +526,29 @@ img {
 
 .highlight {
     font-weight: 600;
+}
+
+/* Two-column list for layouter.html */
+.two-column-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.two-column-list .column {
+    min-width: 0;
+}
+
+/* Float images - used on multiple pages */
+img[style*="float: right"],
+figure[style*="float: right"] {
+    max-width: 100%;
+    height: auto;
+}
+
+/* General responsive improvements for inline styled elements */
+div[style*="display: grid"] {
+    margin: 0;
 }
 
 /* Överlappande knappar container */
