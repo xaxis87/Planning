@@ -235,6 +235,18 @@ body {
     font-weight: 600;
 }
 
+/* Minska avståndet för första H2/H3 direkt efter page-title */
+.content-section[style*="margin-top: 0.5rem"] h2:first-of-type,
+.content-section[style*="margin-top: 0.5rem"] .wbs-text h2:first-of-type,
+.content-section[style*="margin-top: 0.5rem"] > h2:first-child,
+.wbs-section[style*="margin-top: 0.5rem"] .wbs-text h2:first-child {
+    margin-top: 0;
+}
+
+.content-section[style*="margin-top: 0.5rem"] h3:first-of-type {
+    margin-top: 0;
+}
+
 .content-section p + p {
     margin-top: 0.5rem;
 }
