@@ -334,6 +334,12 @@ img {
     margin-top: 4rem;
 }
 
+@media (max-width: 768px) {
+    .site-footer {
+        margin-top: 2rem;
+    }
+}
+
 .footer-content {
     max-width: 900px;
     margin: 0 auto;
