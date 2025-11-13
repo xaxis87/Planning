@@ -493,6 +493,19 @@ img {
         width: 100% !important;
         margin: 0 !important;
     }
+
+    /* Inline styled images - ensure reasonable size on mobile */
+    img[style*="max-width"] {
+        max-width: 80% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* Smaller inline images should be centered and scaled */
+    img[style*="max-width: 200px"],
+    .wbs-image.smaller img {
+        max-width: 65% !important;
+    }
 }
 
 /* Animationer */
