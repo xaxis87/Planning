@@ -850,6 +850,10 @@ div[style*="display: grid"] {
     order: 1;
 }
 
+.wbs-section-4 .wbs-text h2 {
+    margin-top: 0.6rem;
+}
+
 /* För section 5 på aktiviteter-sidan: Två bilder bredvid varandra */
 .wbs-section-5 .wbs-content-wrapper {
     justify-content: center;
