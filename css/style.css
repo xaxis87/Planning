@@ -1005,7 +1005,11 @@ div[style*="display: grid"] {
         flex-direction: column;
     }
 
-    .wbs-section-2 .wbs-image,
+    /* Dölj bild 2 på mobil */
+    .wbs-section-2 .wbs-image {
+        display: none;
+    }
+
     .wbs-section-3 .wbs-image {
         order: 1;
     }
