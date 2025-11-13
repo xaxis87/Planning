@@ -985,7 +985,7 @@ div[style*="display: grid"] {
     .wbs-image-mobile {
         display: flex;
         width: 100%;
-        margin-bottom: 0.25rem;
+        margin-bottom: 1.5rem;
         justify-content: center;
     }
 
