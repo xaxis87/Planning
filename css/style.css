@@ -984,7 +984,7 @@ div[style*="display: grid"] {
     .wbs-image-mobile {
         display: block;
         width: 100%;
-        margin-bottom: 2rem;
+        margin-bottom: 0.5rem;
         display: flex;
         justify-content: center;
     }
@@ -1078,14 +1078,19 @@ div[style*="display: grid"] {
         gap: 2rem;
     }
 
+    /* Minska avstånd för WBS-sektioner på mobil */
+    .wbs-section {
+        margin-bottom: 1rem;
+    }
+
     /* Minska avstånd för back-link på mobil */
     .back-link {
-        margin-top: 1.5rem;
+        margin-top: 0.5rem;
     }
 
     .back-link a,
     .btn-back {
-        margin-top: 1.5rem;
+        margin-top: 0;
     }
 }
 
