@@ -972,7 +972,7 @@ div[style*="display: grid"] {
 
     .wbs-image.smaller {
         max-width: 65%;
-        margin: 0 auto 1.5rem;
+        margin: 0 auto 0.5rem;
     }
 
     .wbs-title {
@@ -985,11 +985,14 @@ div[style*="display: grid"] {
         display: block;
         width: 100%;
         margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
     }
 
     .wbs-image-mobile img {
         width: 100%;
         height: auto;
+        margin: 0 auto;
     }
 
     .wbs-image-desktop {
@@ -1073,6 +1076,16 @@ div[style*="display: grid"] {
     .wbs-content-wrapper-reversed {
         flex-direction: column;
         gap: 2rem;
+    }
+
+    /* Minska avstånd för back-link på mobil */
+    .back-link {
+        margin-top: 1.5rem;
+    }
+
+    .back-link a,
+    .btn-back {
+        margin-top: 1.5rem;
     }
 }
 
