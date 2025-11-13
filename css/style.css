@@ -907,6 +907,11 @@ div[style*="display: grid"] {
     flex-shrink: 0;
 }
 
+/* Flytta ner bilderna i sektion 6-7 så att bild 8 ligger i linje med rubriken */
+.wbs-section-6-7-combined .overlapping-images-container-small {
+    margin-top: 3rem;
+}
+
 .overlapping-images-container-small img {
     position: absolute;
     width: auto;
