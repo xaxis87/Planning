@@ -1058,20 +1058,20 @@ div[style*="display: grid"] {
     }
 
     .overlapping-images-container .image-5 {
-        left: 0;
+        left: 20px;
         top: 50%;
         transform: translateY(-50%);
         z-index: 1;
     }
 
     .overlapping-images-container .image-4 {
-        left: 110px;
+        left: 140px;
         top: 0;
         z-index: 3;
     }
 
     .overlapping-images-container .image-6 {
-        left: 110px;
+        left: 140px;
         bottom: 0;
         z-index: 2;
     }
