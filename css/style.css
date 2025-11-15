@@ -1040,8 +1040,13 @@ div[style*="display: grid"] {
     }
 
     .wbs-section-5 .wbs-image {
-        max-width: 65%;
+        max-width: 85%;
         margin: 0 auto;
+    }
+
+    /* Gör bild 7 (aktiviteter 7) större på mobil */
+    .wbs-section-5 .wbs-image.smaller {
+        max-width: 90%;
     }
 
     /* Överlappande bilder på mobil - behåll överlappning */
@@ -1076,20 +1081,29 @@ div[style*="display: grid"] {
         z-index: 2;
     }
 
-    /* Överlappande bilder 8 och 9 på mobil */
+    /* Överlappande bilder 8 och 9 på mobil - behåll överlappning som desktop */
     .overlapping-images-container-small {
         position: relative;
         width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: center;
+        height: 250px;
+        margin-top: 0 !important;
     }
 
     .overlapping-images-container-small img {
-        position: static;
-        max-width: 65%;
+        position: absolute;
+        max-width: 160px;
+    }
+
+    .overlapping-images-container-small .image-8 {
+        left: 10px;
+        top: 0;
+        z-index: 2;
+    }
+
+    .overlapping-images-container-small .image-9 {
+        left: 80px;
+        top: 90px;
+        z-index: 1;
     }
 
     /* Reversed wrapper på mobil */
