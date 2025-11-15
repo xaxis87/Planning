@@ -1037,6 +1037,7 @@ div[style*="display: grid"] {
     .wbs-section-5 .wbs-content-wrapper {
         flex-direction: column;
         gap: 1.5rem;
+        align-items: center;
     }
 
     .wbs-section-5 .wbs-image {
@@ -1044,11 +1045,16 @@ div[style*="display: grid"] {
         margin: 0 auto;
     }
 
-    /* Gör bild 7 (aktiviteter 7) större på mobil */
+    /* Gör bild 7 (aktiviteter 7) större och centrera på mobil */
     .wbs-section-5 .wbs-image.smaller {
         max-width: 90%;
-        align-self: center;
         margin: 0 auto;
+        display: block;
+    }
+
+    .wbs-section-5 .wbs-image.smaller img {
+        margin: 0 auto;
+        display: block;
     }
 
     /* Överlappande bilder på mobil - behåll överlappning */
@@ -1117,11 +1123,16 @@ div[style*="display: grid"] {
     .wbs-content-wrapper-reversed {
         flex-direction: column;
         gap: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     /* Minska avstånd mellan bild 9 och Antaganden-texten på mobil */
+    .wbs-section-6-7-combined > .wbs-text {
+        margin-top: 0 !important;
+    }
+
     .wbs-section-6-7-combined > .wbs-text h2 {
-        margin-top: 0.5rem;
+        margin-top: 0.5rem !important;
     }
 
     /* Minska avstånd för WBS-sektioner på mobil */
