@@ -1044,20 +1044,36 @@ div[style*="display: grid"] {
         margin: 0 auto;
     }
 
-    /* Överlappande bilder på mobil */
+    /* Överlappande bilder på mobil - behåll överlappning */
     .overlapping-images-container {
         position: relative;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: center;
+        height: 300px;
+        width: 100%;
+        margin: 2rem 0;
     }
 
     .overlapping-images-container img {
-        position: static;
-        transform: none;
-        max-width: 65%;
+        position: absolute;
+        max-width: 140px;
+    }
+
+    .overlapping-images-container .image-5 {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .overlapping-images-container .image-4 {
+        left: 100px;
+        top: 0;
+        z-index: 3;
+    }
+
+    .overlapping-images-container .image-6 {
+        left: 100px;
+        bottom: 0;
+        z-index: 2;
     }
 
     /* Överlappande bilder 8 och 9 på mobil */
