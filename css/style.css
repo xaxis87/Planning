@@ -1087,6 +1087,8 @@ div[style*="display: grid"] {
         width: 100%;
         height: 250px;
         margin-top: 0 !important;
+        display: flex;
+        justify-content: center;
     }
 
     .overlapping-images-container-small img {
@@ -1095,13 +1097,15 @@ div[style*="display: grid"] {
     }
 
     .overlapping-images-container-small .image-8 {
-        left: 10px;
+        left: 50%;
+        transform: translateX(-100px);
         top: 0;
         z-index: 2;
     }
 
     .overlapping-images-container-small .image-9 {
-        left: 80px;
+        left: 50%;
+        transform: translateX(-30px);
         top: 90px;
         z-index: 1;
     }
