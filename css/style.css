@@ -922,7 +922,7 @@ div[style*="display: grid"] {
 .overlapping-images-container-small {
     position: relative;
     width: 300px;
-    height: 350px;
+    height: 300px;
     flex-shrink: 0;
 }
 
