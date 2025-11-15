@@ -1047,14 +1047,14 @@ div[style*="display: grid"] {
     /* Överlappande bilder på mobil - behåll överlappning */
     .overlapping-images-container {
         position: relative;
-        height: 300px;
+        height: 320px;
         width: 100%;
         margin: 2rem 0;
     }
 
     .overlapping-images-container img {
         position: absolute;
-        max-width: 140px;
+        max-width: 175px;
     }
 
     .overlapping-images-container .image-5 {
@@ -1065,13 +1065,13 @@ div[style*="display: grid"] {
     }
 
     .overlapping-images-container .image-4 {
-        left: 100px;
+        left: 110px;
         top: 0;
         z-index: 3;
     }
 
     .overlapping-images-container .image-6 {
-        left: 100px;
+        left: 110px;
         bottom: 0;
         z-index: 2;
     }
