@@ -1047,6 +1047,7 @@ div[style*="display: grid"] {
     /* Gör bild 7 (aktiviteter 7) större på mobil */
     .wbs-section-5 .wbs-image.smaller {
         max-width: 90%;
+        align-self: center;
     }
 
     /* Överlappande bilder på mobil - behåll överlappning */
