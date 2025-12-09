@@ -1011,6 +1011,16 @@ div[style*="display: grid"] {
         display: none;
     }
 
+    /* Minska avstånd efter section 2 på mobil */
+    .wbs-section-2 {
+        margin-bottom: 0.25rem;
+    }
+
+    .wbs-section-2 .wbs-content-wrapper {
+        gap: 0.25rem;
+        margin-bottom: 0;
+    }
+
     .wbs-section-3 .wbs-image {
         order: 1;
     }
