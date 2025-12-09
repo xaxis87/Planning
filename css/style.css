@@ -1021,8 +1021,19 @@ div[style*="display: grid"] {
         margin-bottom: 0;
     }
 
+    /* Minska avstånd efter section 3 på mobil (andra synliga bilden) */
+    .wbs-section-3 {
+        margin-bottom: 0.25rem;
+    }
+
+    .wbs-section-3 .wbs-content-wrapper {
+        gap: 0.25rem;
+        margin-bottom: 0;
+    }
+
     .wbs-section-3 .wbs-image {
         order: 1;
+        margin-bottom: 0 !important;
     }
 
     .wbs-section-2 .wbs-text,
